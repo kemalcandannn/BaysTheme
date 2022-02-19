@@ -16,14 +16,15 @@
 		<composite:attribute name="required" default="#{false}" />
 		<composite:attribute name="requiredMessage" default="" />
 		<composite:attribute name="rendered" default="#{true}" />
+		<composite:attribute name="styleClass" />
 		<composite:attribute name="tabindex" />
 		<composite:attribute name="value" required="#{true}" />
 	</composite:interface>
 	
 	<composite:implementation>
 		<p:inputText	placeholder="#{cc.attrs.placeholder}" 
-						style="margin-right: 2px;"
 						value="#{cc.attrs.value}" 
+						styleClass="#{cc.attrs.styleClass}" 
 						disabled="#{cc.attrs.disabled}" 
 						readonly="#{cc.attrs.readonly}" 
 						rendered="#{cc.attrs.rendered}" 

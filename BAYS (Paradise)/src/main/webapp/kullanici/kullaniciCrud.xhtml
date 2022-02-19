@@ -119,10 +119,10 @@
 										</p:outputPanel>
 									</div>
 									<div class="ui-g-6 saga_yasla">
-									
-										<algan:inputText	placeholder="#{labels.ad} | #{labels.soyad} | #{labels.kullanici_adi}" 
-															value="#{kullaniciController.list.sorgu}" 
-															/>
+										<algan:gelismisAramaSorgulamaPanel	placeholder="#{labels.ad} | #{labels.soyad} | #{labels.kullanici_adi}" 
+																			value="#{kullaniciController.list.sorgu}" 
+																			clearAction="#{kullaniciController.formTemizle}" 
+																			update="kullanici_form" />
 
 										<algan:buton	value="#{labels.sorgula}" 
 														action="#{kullaniciController.listele}" 

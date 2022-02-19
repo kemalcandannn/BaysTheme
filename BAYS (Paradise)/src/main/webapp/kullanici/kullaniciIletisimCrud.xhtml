@@ -75,9 +75,10 @@
 									</div>
 									<div class="ui-g-6 saga_yasla">
 									
-										<algan:inputText	placeholder="#{labels.eposta} | #{labels.cep_telefonu}" 
-															value="#{kullaniciIletisimController.list.sorgu}" 
-															/>
+										<algan:gelismisAramaSorgulamaPanel	placeholder="#{labels.eposta} | #{labels.cep_telefonu}" 
+																			value="#{kullaniciIletisimController.list.sorgu}" 
+																			clearAction="#{kullaniciIletisimController.formTemizle}" 
+																			update="kullanici_iletisim_form" />
 			
 										<algan:buton	value="#{labels.sorgula}" 
 														action="#{kullaniciIletisimController.listele}" 

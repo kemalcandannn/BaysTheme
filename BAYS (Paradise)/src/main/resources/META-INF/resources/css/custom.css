@@ -122,6 +122,24 @@
 	padding-top: 0px;
 }
 
+.borderRight0 {
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+.borderLeft0 {
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.marginRight5 {
+	margin-right: 5px !important;
+}
+
+.marginLeft0 {
+	margin-left: 0px !important;
+}
+
 .parolamiUnuttumButton {
 	padding: 0.5rem 1rem 0.5rem 2rem;
 	background: #3984b8;
