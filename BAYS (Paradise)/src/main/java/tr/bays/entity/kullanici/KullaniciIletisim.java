@@ -12,7 +12,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import tr.bays.entity.VersionedBaseEntity;
+import tr.bays.entity.VersionedEntity;
 
 @SuppressWarnings("serial")
 @Entity(name = "KullaniciIletisim")
@@ -20,7 +20,7 @@ import tr.bays.entity.VersionedBaseEntity;
 @EqualsAndHashCode(callSuper = false)
 @Table(name = "kullanici_iletisim")
 @Cache(region = "baysKullaniciIletisimCache", usage = CacheConcurrencyStrategy.READ_WRITE)
-public class KullaniciIletisim extends VersionedBaseEntity {
+public class KullaniciIletisim extends VersionedEntity {
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "kullanici_id", nullable = false)

@@ -11,7 +11,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import tr.bays.entity.VersionedBaseEntity;
+import tr.bays.entity.VersionedEntity;
 import util.DateTimeUtil;
 
 @SuppressWarnings("serial")
@@ -20,7 +20,7 @@ import util.DateTimeUtil;
 @EqualsAndHashCode(callSuper = false)
 @Table(name = "kullanici")
 @Cache(region = "baysKullaniciCache", usage = CacheConcurrencyStrategy.READ_WRITE)
-public class Kullanici extends VersionedBaseEntity {
+public class Kullanici extends VersionedEntity {
 
 	@Column(name = "kullanici_adi", unique = true, nullable = false)
 	private String kullanici_adi;

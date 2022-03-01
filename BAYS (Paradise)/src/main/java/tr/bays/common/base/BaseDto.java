@@ -2,8 +2,6 @@ package tr.bays.common.base;
 
 import java.io.Serializable;
 
-import javax.persistence.Version;
-
 import lombok.Data;
 
 @SuppressWarnings("serial")

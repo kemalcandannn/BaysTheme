@@ -10,14 +10,14 @@ import org.springframework.transaction.annotation.Transactional;
 
 import tr.bays.common.base.BaseDto;
 import tr.bays.dao.BaseRepository;
-import tr.bays.entity.VersionedBaseEntity;
+import tr.bays.entity.BaseEntity;
 import tr.bays.mapper.DtoMapper;
 import tr.bays.service.BaseCrudService;
 
 @SuppressWarnings("serial")
 @Transactional
 @Service
-public abstract class BaseCrudServiceImpl<DTO extends BaseDto, ENTITY extends VersionedBaseEntity> implements Serializable, BaseCrudService<DTO> {
+public abstract class BaseCrudServiceImpl<DTO extends BaseDto, ENTITY extends BaseEntity> implements Serializable, BaseCrudService<DTO> {
 	protected static Log LOGGER = LogFactory.getLog(BaseCrudServiceImpl.class);
 	protected BaseRepository<ENTITY> repo;
 	protected DtoMapper<DTO, ENTITY> dtoMapper;
